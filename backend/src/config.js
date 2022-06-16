@@ -7,22 +7,35 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "14th Century Kids";
+const description = "14th Century Kids' goal is a low-budget project that is aiming to raise funds for Charity Organization in the Philippines and in the United States of America.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Background Accesories" },
+      { name: "Base" },
+      { name: "Clothing" },
+      { name: "Hair" },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Crown" },
+      { name: "Jewels" },
+    ],
+  },{
+    growEditionSizeTo: 20,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Base" },
+      { name: "Clothing" },
+      { name: "Hair" },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Crown" },
     ],
   },
 ];
@@ -32,13 +45,13 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2500,
+  height: 2500,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://14thcenturykids.netlify.app/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
